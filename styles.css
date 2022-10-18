@@ -1,6 +1,7 @@
 :root {
     --button-green: #103110; 
-    --off-white: #fdfdfd
+    --off-white: #fdfdfd;
+    --text-background: #1919199c;
 }
 
 .img-background {
@@ -11,7 +12,7 @@
 
 #header-content {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -21,9 +22,16 @@
 
 #header-content h1 {
     font-size: 3em;
-    background-color: #1919199c;
+    background-color: var(--text-background);
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+    margin-bottom: 1em;
+}
+
+#header-link {
+    color: var(--off-white);
+    background-color: var(--text-background);
+    font-size: 1.2em;
 }
 
 body, html {
@@ -82,3 +90,4 @@ body, html {
 .species-scientific-name {
     font-style: italic;
 }
+
