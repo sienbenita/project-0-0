@@ -1,21 +1,23 @@
 :root {
     --button-green: #0e4b36; 
-    --navbar-green: #061b13;
+    --dark-green: #061b19;
     --off-white: #f4f4f4;
     --text-background: #1919199c;
     --background-green: #a4b4a4;
 }
+
 
 #navbar {
     display: flex;
     align-items: center;
     flex: 1;
     height: 10vh;
-    background-color: var(--navbar-green);
+    background-color: var(--dark-green);
 }
 
 #branding {
     padding-left: 20px;
+    font-family: 'DM Serif Text', serif;
 }
 
 #branding a {
@@ -26,7 +28,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 20px;
+    padding: 10px 20% 10px 10%;
     flex: 3;
 }
 
@@ -37,6 +39,10 @@
 #navbar a:link, #navbar a:visited, #navbar a:hover, #navbar a:active {
     color: var(--off-white);
     text-decoration: none;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: var(--dark-green);
 }
 
 .img-background {
@@ -58,7 +64,7 @@
 #translucent-box {
     width: 100%;
     height: 90vh;
-    background-color: #ffffff1f;
+    background-color: #ffffff2a;
     position: absolute;
 }
 
@@ -66,6 +72,7 @@
     font-size: 4em;
     padding: 0.4em 0;
     margin-bottom: 1em;
+    font-family: 'DM Serif Text', serif;
 }
 
 #header-link {
@@ -84,24 +91,30 @@ body, html {
     
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+}
+
 .header-container {
     display: grid;
     color: white;
 }
 
 #content {
-    width: 80%;
-    margin: 2em 10%;
+    width: 60%;
+    margin: 2em 20%;
     
-}
-
-.navbar {
-    background-color: var(--button-green) !important;
 }
 
 .searchbar-container {
     margin: 2em 10%
 }
+
+#page-searchbar {
+    height: 4em;
+}
+
 
 #page-searchbar-group {
     font-size: 1.2em;
@@ -153,10 +166,20 @@ button {
 }
 
 #basic-info {
-    padding: 2em 0 1em 0;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 0em;
     line-height: 2em;
+    background-color: var(--off-white);
+
 }
 
-#basic-info ul {
+ul {
     list-style-type: none;
 }
+
+@media screen and (max-width: 900px) {
+    #content {
+       width: 80%;
+       margin: 2em 10%;
+    }
+ }
