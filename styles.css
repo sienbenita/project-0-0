@@ -52,6 +52,10 @@ body, html {
     
 }
 
+.navbar {
+    background-color: var(--button-green) !important;
+}
+
 .searchbar-container {
     margin: 2em 10%
 }
