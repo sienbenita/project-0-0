@@ -2,11 +2,12 @@
     --button-green: #103110; 
     --off-white: #fdfdfd;
     --text-background: #1919199c;
+    --background-green: #a4b4a4;
 }
 
 .img-background {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     object-fit: cover;
 }
 
@@ -37,7 +38,7 @@
 body, html {
     padding: 0;
     margin: 0;
-    background-color: var(--off-white);
+    
 }
 
 .header-container {
@@ -77,6 +78,10 @@ body, html {
 
 .species-info-container {
     display: flex;
+    background-color: var(--off-white);
+    padding: 1em;
+    color: black;
+    margin-top: 1em;
 }
 
 .species-detail-container {
@@ -91,3 +96,17 @@ body, html {
     font-style: italic;
 }
 
+#species-full-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#basic-info {
+    padding: 2em 0 1em 0;
+    line-height: 2em;
+}
+
+#basic-info ul {
+    list-style-type: none;
+}
